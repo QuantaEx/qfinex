@@ -19,7 +19,8 @@
 log
 *.log
 tmp
-
+*.zip
+*.tar.gz
 # Ignore all config files
 /config/application.yml
 /config/markets.yml
