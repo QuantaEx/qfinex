@@ -1,0 +1,69 @@
+<% if ENV['MARKETS_CONFIG'] %>
+<%= File.read(ENV['MARKETS_CONFIG']) %>
+<% else %>
+- id:                btcusd
+  base_unit:         btc
+  quote_unit:        usd
+  amount_precision:  4
+  price_precision:   4
+  min_price:         0.0001
+  max_price:         0.0
+  min_amount:        0.0001
+  position:          100
+  state:             enabled
+
+- id:                ethusd
+  base_unit:         eth
+  quote_unit:        usd
+  amount_precision:  4
+  price_precision:   4
+  min_price:         0.0001
+  max_price:         0.0
+  min_amount:        0.0001
+  position:          101
+  state:             enabled
+
+- id:                trstusd
+  base_unit:         trst
+  quote_unit:        usd
+  amount_precision:  4
+  price_precision:   4
+  min_price:         0.0001
+  max_price:         0.0
+  min_amount:        0.0001
+  position:          102
+  state:             enabled
+
+- id:                ethbtc
+  base_unit:         eth
+  quote_unit:        btc
+  amount_precision:  4
+  price_precision:   4
+  min_price:         0.0001
+  max_price:         0.0
+  min_amount:        0.0001
+  position:          103
+  state:             enabled
+
+- id:                trstbtc
+  base_unit:         trst
+  quote_unit:        btc
+  amount_precision:  4
+  price_precision:   4
+  min_price:         0.0001
+  max_price:         0.0
+  min_amount:        0.0001
+  position:          104
+  state:             enabled
+
+- id:                trsteth
+  base_unit:         trst
+  quote_unit:        eth
+  amount_precision:  4
+  price_precision:   4
+  min_price:         0.0001
+  max_price:         0.0
+  min_amount:        0.0001
+  position:          105
+  state:             enabled
+<% end %>

@@ -1,0 +1,33 @@
+# Ignore git
+.git
+.gitignore
+
+# JetBrains IDE files
+.idea
+
+# Ignore docker
+Dockerfile
+Dockerfile.plugin
+.dockerignore
+
+# Ignore CI related files
+ci
+.travis.yml
+
+# Ignore files for development
+.ruby-version
+.rspec
+
+.DS_Store
+*.md
+docs
+tmp
+log
+.god
+
+# Ignore bundler config
+/.bundle
+
+# Ignore locally installed gems
+/vendor/bundle
+
